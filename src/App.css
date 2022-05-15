@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.TitleSection {
+    background-image: url(/src/images/4.jpg);
+    height: 210px;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-y: -13rem;
+    width: 100vw;
+}
+
+.searchWrap {
+    margin-bottom: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 210px;
+}
+
+.searchWrap h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: .50rem;
+}
+
+.searchWrap input {
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: .85rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #4ca8ee;
+    font-size: 18px;
+}
+
+.searchWrap input:focus {
+    border: 2px solid black;
+}
+
+.searchWrap input::placeholder {
+    letter-spacing: .30rem;
+    opacity: .65;
+}
+
+.searchWrap button {
+    width: 180px;
+    height: 40px;
+    margin-top: .3rem;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: white;
+    background-color: #4ca8ee;
+    border: none;
+}
+
+.searchWrap button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2788c9;
+}
+
+.searchWrap button:focus {
+    background-color: white;
+    color: #08466f;
+
+}
+
+.DisplaySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(180, 180, 180, 0.86);
+    width: 100vw;
+    height: 100vh;
+}
+
+.DisplaySection .nothingChoosenHeading {
+    margin-top: 10rem;
+}
+
+.DisplaySection h3,
+h4 {
+    margin: 5px;
+}
+
+.DisplaySection img {
+    width: 200px;
+}
+
+
+@media screen and (min-width: 792px) {
+    .TitleSection {
+        background-image: url(/src/images/4.jpg);
+        height: 210px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -650px;
+        width: 100vw;
+    }
+
+}
