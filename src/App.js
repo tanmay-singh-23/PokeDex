@@ -22,7 +22,7 @@ function App() {
 		specialAbility: "",
 	});
 
-	const searchPokemon = (e) => {
+	const searchPokemon = () => {
 		Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then(
 			(res) => {
 				// console.log(res);
@@ -41,6 +41,7 @@ function App() {
 					specialAbility: res.data.abilities[1].ability.name,
 				});
 				setPokemonChosen(true);
+				setPokemonName("");
 			}
 		);
 	};
@@ -53,6 +54,7 @@ function App() {
 					<input
 						type="text"
 						placeholder="Pikachu"
+						value={pokemonName}
 						onChange={(event) => {
 							setPokemonName(event.target.value);
 						}}
